@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"></meta>
+        <title>Qantas Code Test - Communication History</title>
+
+        <link href="./styles/kendo.default-main.min.css" rel="stylesheet" />
+        <link href="./styles/index.css" rel="stylesheet" />
+        <script src="./lib/jquery.min.js"></script>
+        <script src="./lib/kendo.ui.core.min.js"></script>
+        <script src="./app/index.js"></script>
+        <script src="./app/components/app-config.js"></script>
+        <script src="./app/components/data-grid.js"></script>
+    </head>
+    <body>
+        <div>
+          <div class="app-title">
+            <h2>Communication History</h2>
+          </div>
+          <div class="app-content">
+            <div id="dialog"></div>
+            <div class="app-section">
+              <div class="filter-row">
+                <div class="filter-item">
+                  <input id="filter-origin" />
+                </div>
+                <div class="filter-item">
+                  <input id="filter-dest" />
+                </div>
+                <div class="filter-item">
+                  <input id="filter-flight" />
+                </div>
+                <div class="filter-item">
+                  <input id="filter-date" />
+                </div>
+                <div class="filter-item">
+                  <input id="filter-max" />
+                </div>
+              </div>
+              <div class="filter-row">
+                <div class="filter-item">
+                  <button id="btn-reset" >Reset</button>
+                </div>
+                <div class="filter-item">
+                  <button id="btn-search" >Search</button>
+                </div>
+              </div>
+            </div>
+            <div class="app-section">
+              <div id="search-result">
+              </div>
+            </div>
+          </div>
+        </div>
+    </body>
+</html>
